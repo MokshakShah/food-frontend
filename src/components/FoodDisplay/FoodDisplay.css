@@ -1,0 +1,39 @@
+.food-display{
+    margin-top:30px;
+    animation: bounceIn 0.8s ease-in;
+
+}
+
+.food-display h2{
+    font-size: max(2vw,24px);
+    font-weight: 600px;
+}
+
+.food-display-list{
+    display:grid;
+    grid-template-columns: repeat(auto-fill,minmax(240px, 1fr));
+    margin-top: 30px;
+    gap:30px;
+    row-gap:50px;
+}
+
+@keyframes bounceIn {
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    60% {
+        transform: translateY(10px);
+        opacity: 1;
+    }
+    80% {
+        transform: translateY(-5px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+/* 
+.bounce-in {
+    animation: bounceIn 0.8s ease-out;
+} */
