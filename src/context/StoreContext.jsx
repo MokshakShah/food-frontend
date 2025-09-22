@@ -52,7 +52,7 @@ const StoreContextProvider = (props) => {
     }
 
     // yha se food details pass on hogi
-    // const fetchFoodlist = async ()=>{
+    const fetchFoodlist = async ()=>{
     //     const response = await axios.get(url+"/api/food/list");
     const response = await axios.get(`${url}/api/food/list`);
 
