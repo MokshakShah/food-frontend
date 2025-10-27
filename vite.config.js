@@ -19,7 +19,6 @@ export default defineConfig({
   build: {
     outDir: 'dist'
   },
-  // 👇 THIS IS IMPORTANT FOR VERCEL SPA ROUTING
   resolve: {
     alias: {
       '@': '/src'
